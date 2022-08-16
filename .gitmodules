@@ -1,0 +1,3 @@
+[submodule "SnowEngine/plugins/spdlog"]
+	path = SnowEngine/plugins/spdlog
+	url = https://github.com/gabime/spdlog.git
