@@ -17,9 +17,7 @@ private:
 
 };
 
-int main()
+SnowEngine::Application* SnowEngine::CreateApplication()
 {
-	SnowGame* snowgame = new SnowGame();
-	snowgame->Run();
-	delete snowgame;
+	return new SnowGame();
 }

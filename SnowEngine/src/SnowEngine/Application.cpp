@@ -1,5 +1,4 @@
 #include "Application.h"
-#include <stdio.h>
 
 namespace SnowEngine {
 	Application::Application()

@@ -3,10 +3,14 @@
 namespace SnowEngine {
 	class SNOW_API Application
 	{
-		public:
-			Application();
-			virtual ~Application();
+	public:
+		Application();
+		virtual ~Application();
 
-			void Run();
+		void Run();
+
+
 	};
-}
+	//To be defined in Client
+	Application* CreateApplication();
+}	
