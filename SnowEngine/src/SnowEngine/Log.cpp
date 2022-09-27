@@ -8,7 +8,7 @@ namespace SnowEngine {
 
 	void Log::Init()
 	{
-		spdlog::set_pattern("%^[%n-%T] %v%$");
+		spdlog::set_pattern("%^[%T] %n: %v%$");
 		s_CoreLogger = spdlog::stdout_color_mt("SNOWENGINE");
 		s_CoreLogger->set_level(spdlog::level::trace);
 
