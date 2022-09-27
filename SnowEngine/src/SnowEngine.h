@@ -2,8 +2,8 @@
 
 //For use by SnowEngine Games
 
-#include <stdio.h>
 #include "SnowEngine/Application.h"
+#include "SnowEngine/Log.h"
 
 
 //---------Entry Point-------------
