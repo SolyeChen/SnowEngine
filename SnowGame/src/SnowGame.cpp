@@ -5,12 +5,13 @@ class SnowGame : public SnowEngine::Application
 public:
 	SnowGame()
 	{
-		std::cout<<"Create SnowGame Made By SnowEngine."<<std::endl;
+
+		SNOW_CORE_INFO("Create SnowGame Made By SnowEngine.");
 	}
 
 	~SnowGame()
 	{
-		std::cout << "Destroy SnowGame Made By SnowEngine."<<std::endl;
+		SNOW_CORE_INFO("Destroy SnowGame Made By SnowEngine.");
 	}
 
 private:
