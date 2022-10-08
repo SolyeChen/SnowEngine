@@ -26,6 +26,7 @@ project "SnowEngine"
 
     includedirs
     {
+        "src",
         "%{prj.name}/plugins/spdlog/include", 
     }
 

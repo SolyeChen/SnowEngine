@@ -4,6 +4,15 @@
     <Filter Include="SnowEngine">
       <UniqueIdentifier>{C2C96574-AE81-A7C1-1789-801D036042B2}</UniqueIdentifier>
     </Filter>
+    <Filter Include="SnowEngine\Core">
+      <UniqueIdentifier>{5A576DA0-C6E2-DA64-CFF3-5D593BFE3665}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SnowEngine\Events">
+      <UniqueIdentifier>{66A74276-D2BD-400C-1B35-CC2D878A1194}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SnowEngine\Utils">
+      <UniqueIdentifier>{A29460AF-8E8D-7F01-B7BF-6486A3175F0D}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\SnowEngine.h" />
@@ -13,11 +22,26 @@
     <ClInclude Include="src\SnowEngine\Core.h">
       <Filter>SnowEngine</Filter>
     </ClInclude>
+    <ClInclude Include="src\SnowEngine\Core\MouseCodes.h">
+      <Filter>SnowEngine\Core</Filter>
+    </ClInclude>
     <ClInclude Include="src\SnowEngine\EntryPoint.h">
       <Filter>SnowEngine</Filter>
     </ClInclude>
+    <ClInclude Include="src\SnowEngine\Events\ApplicationEvent.h">
+      <Filter>SnowEngine\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SnowEngine\Events\Event.h">
+      <Filter>SnowEngine\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SnowEngine\Events\MouseEvent.h">
+      <Filter>SnowEngine\Events</Filter>
+    </ClInclude>
     <ClInclude Include="src\SnowEngine\Log.h">
       <Filter>SnowEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SnowEngine\Utils\Delegate.h">
+      <Filter>SnowEngine\Utils</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -26,6 +50,9 @@
     </ClCompile>
     <ClCompile Include="src\SnowEngine\Log.cpp">
       <Filter>SnowEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SnowEngine\Utils\Delegate.cpp">
+      <Filter>SnowEngine\Utils</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

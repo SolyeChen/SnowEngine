@@ -1,5 +1,7 @@
 #pragma once
 #include "Core.h"
+#include "SnowEngine/Events/ApplicationEvent.h"
+
 namespace SnowEngine {
 	class SNOW_API Application
 	{
