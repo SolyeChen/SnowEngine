@@ -9,3 +9,5 @@
 #else
 	#error Snow Only Support Windows Now !
 #endif //  SNOW_PLATFORM_WINDOWS
+
+#define BIT(x) (1 << x)

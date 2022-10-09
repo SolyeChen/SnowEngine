@@ -26,14 +26,14 @@ project "SnowEngine"
 
     includedirs
     {
-        "src",
+        "%{prj.name}/src",
         "%{prj.name}/plugins/spdlog/include", 
     }
 
     filter "system:windows"
         cppdialect "C++17"
         staticruntime "On"
-        systemversion "10.0"
+        systemversion "latest"
 
         defines
         {
@@ -87,7 +87,7 @@ project "SnowGame"
     filter "system:windows"
         cppdialect "C++17"
         staticruntime "On"
-        systemversion "10.0"
+        systemversion "latest"
 
         defines
         {

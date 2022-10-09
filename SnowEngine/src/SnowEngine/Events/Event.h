@@ -2,6 +2,7 @@
 
 #include <string>
 #include <functional>
+#include "SnowEngine/Core.h"
 
 namespace SnowEngine {
 
@@ -9,26 +10,27 @@ namespace SnowEngine {
 	{
 		None = 0,
 		WindowClose, WindowResize, WindowFocus, WindowLostFocus, WindowsMoved,
-		AppTick, AppUpdatem, AppRender,
-		KeyPressed, KeyReleased,
+		AppTick, AppUpdate, AppRender,
+		KeyPressed, KeyReleased, KeyTyped,
 		MouseButtonPressed, MouseButtonReleased, MouseMoved, MouseScrolled
 	};
 
 	enum EventCategory
 	{
 		None = 0,
-		EventnCategoryApplication		= BIT(0),
-		EventnCategoryInput				= BIT(1),
-		EventnCategoryKeyboard			= BIT(2),
-		EventnCategoryMouse				= BIT(3),
-		EventnCategoryMousebutton		= BIT(4),
-	};
+		EventCategoryApplication = BIT(0),
+		EventCategoryInput = BIT(1),
+		EventCategoryKeyboard = BIT(2),
+		EventCategoryMouse = BIT(3),
+		EventCategoryMouseButton = BIT(4)
+	}; 
 
-#define EVENT_CLASS_TYPE(type) static EventType GetStaticType() {return EventType::#type;}\
+#define EVENT_CLASS_TYPE(type) static EventType GetStaticType() {return EventType::type;}\
 								virtual EventType GetEventType() const override { return GetStaticType(); }\
 								virtual const char* GetName() const override { return #type; }
 
 #define EVENT_CLASS_CATEGORY(category) virtual int GetCategoryFlags() const override { return category; }
+
 	class Event
 	{
 	public:
@@ -51,7 +53,8 @@ namespace SnowEngine {
 	class EventDispatcher
 	{
 	public: 
-		EventDispatcher(Event& event) :m_Event(event)
+		EventDispatcher(Event& event) 
+			: m_Event(event)
 		{
 
 		}

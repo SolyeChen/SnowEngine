@@ -43,6 +43,8 @@
     <ClInclude Include="src\SnowEngine\Utils\Delegate.h">
       <Filter>SnowEngine\Utils</Filter>
     </ClInclude>
+    <ClInclude Include="src\SnowEngine\Events\KeyEvent.h" />
+    <ClInclude Include="src\SnowEngine\Core\KeyCode.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\SnowEngine\Application.cpp">
@@ -54,5 +56,8 @@
     <ClCompile Include="src\SnowEngine\Utils\Delegate.cpp">
       <Filter>SnowEngine\Utils</Filter>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="cpp.hint" />
   </ItemGroup>
 </Project>
